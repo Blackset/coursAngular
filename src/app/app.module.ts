@@ -11,7 +11,7 @@ import {Routes, RouterModule} from '@angular/router'
 import{AuthService} from './services/auth.service';
 const appRoutes: Routes = [
 {path:'appareils', component:AppareilViewComponent},
-{path: 'auth', component:AuthComponent},
+{path:'auth', component:AuthComponent},
 {path:'',component:AppareilViewComponent}
 
 ]

@@ -1,23 +1,21 @@
-import { resolve } from "path";
-import { reject } from "q";
-
 export class AuthService {
 
-    isAuth= false;
-
+    isAuth = false;
+  
     signIn() {
-        return new Promise ((resolve,reject) => {
-            setTimeout(() => {
-                this.isAuth= true;
-                resolve(true);
-            },2000
-            );
+      return new Promise(
+        (resolve, reject) => {
+          setTimeout(
+            () => {
+              this.isAuth = true;
+              resolve(true);
+            }, 2000
+          );
         }
-        );
-        }
-
-
-        signOut(){
-            this.isAuth=false;
-        }
-}
+      );
+    }
+  
+    signOut() {
+      this.isAuth = false;
+    }
+  }
